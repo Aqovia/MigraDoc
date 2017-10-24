@@ -24,6 +24,6 @@ build:
   verbosity: minimal
 # scripts to run after build
 after_build:
-   - NuGet.exe pack PDFsharp-MigraDoc-GDI.nuspec %APPVEYOR_BUILD_VERSION%.
+   - NuGet.exe pack PDFsharp-MigraDoc-GDI.nuspec -Version %APPVEYOR_BUILD_VERSION%
 deploy_script:
 - ps: "if ($env:APPVEYOR_REPO_BRANCH -eq \"forkMaster\")\n{\n    $repo = \"https://api.bintray.com/nuget/aqovia/NuGetOSS\"\n\n    nuget sources Add -Name Bintray -Source $repo -UserName $env:BinTrayUserName -Password $env:BinTrayApiKey\n    nuget setapikey \"$($env:BinTrayUserName):$($env:BinTrayApiKey)\" -Source Bintray\n\n    $packages = Get-ChildItem -Recurse -Filter *.nupkg $env:TEMP \n    ForEach ($package in $packages)\n    {\n        nuget push $package.FullName -Source $repo\n    }\n}"
