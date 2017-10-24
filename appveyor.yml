@@ -17,6 +17,7 @@ environment:
   BinTrayApiKey:
     secure: 2IYE5snVeQL6iDa1mJ0z38R6mgymmr5R5lP4PkvIlaFIdfxv6sfeoSs8+hl0ELS1
 build:
+  project: MigraDoc\src\BuildAll-MigraDoc.sln 
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
