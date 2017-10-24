@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>PDFsharp-MigraDoc-GDI</id>
-    <version>${version}</version>
+    <version>$version$</version>
     <title>PDFsharp + MigraDoc</title>
     <authors>empira Software GmbH</authors>
     <owners>empira Software GmbH</owners>
@@ -22,15 +22,15 @@ This is PDFsharp and MigraDoc based on GDI+. See Project Information for details
     </frameworkAssemblies>
   </metadata>
   <files>
-  	<file src="MigraDoc\src\MigraDoc.DocumentObjectModel\bin\Release\MigraDoc.DocumentObjectModel.dll" target="" />
-	<file src="MigraDoc\src\MigraDoc.DocumentObjectModel\bin\Release\MigraDoc.DocumentObjectModel.xml" target="" />
-	<file src="MigraDoc\src\MigraDoc.Rendering\bin\Release\MigraDoc.Rendering.dll" target="" />
-	<file src="MigraDoc\src\MigraDoc.Rendering\bin\Release\MigraDoc.Rendering.xml" target="" />
-	<file src="MigraDoc\src\MigraDoc.RtfRendering\bin\Release\MigraDoc.RtfRendering.dll" target="" />
-	<file src="MigraDoc\src\MigraDoc.RtfRendering\bin\Release\MigraDoc.RtfRendering.xml" target="" />
-	<file src="PDFsharp\src\PdfSharp.Charting\bin\Release\PdfSharp.Charting.dll" target="" />
-	<file src="PDFsharp\src\PdfSharp.Charting\bin\Release\PdfSharp.Charting.xml" target="" />
-	<file src="PDFsharp\src\PdfSharp\bin\Release\PdfSharp.dll" target="" />
-	<file src="PDFsharp\src\PdfSharp\bin\Release\PdfSharp.xml" target="" />
+  	<file src="MigraDoc\src\MigraDoc.DocumentObjectModel\bin\Release\MigraDoc.DocumentObjectModel.dll" target="lib\net20" />
+	<file src="MigraDoc\src\MigraDoc.DocumentObjectModel\bin\Release\MigraDoc.DocumentObjectModel.xml" target="lib\net20" />
+	<file src="MigraDoc\src\MigraDoc.Rendering\bin\Release\MigraDoc.Rendering.dll" target="lib\net20" />
+	<file src="MigraDoc\src\MigraDoc.Rendering\bin\Release\MigraDoc.Rendering.xml" target="lib\net20" />
+	<file src="MigraDoc\src\MigraDoc.RtfRendering\bin\Release\MigraDoc.RtfRendering.dll" target="lib\net20" />
+	<file src="MigraDoc\src\MigraDoc.RtfRendering\bin\Release\MigraDoc.RtfRendering.xml" target="lib\net20" />
+	<file src="PDFsharp\src\PdfSharp.Charting\bin\Release\PdfSharp.Charting.dll" target="lib\net20" />
+	<file src="PDFsharp\src\PdfSharp.Charting\bin\Release\PdfSharp.Charting.xml" target="lib\net20" />
+	<file src="PDFsharp\src\PdfSharp\bin\Release\PdfSharp.dll" target="lib\net20" />
+	<file src="PDFsharp\src\PdfSharp\bin\Release\PdfSharp.xml" target="lib\net20" />
   </files>
 </package>
