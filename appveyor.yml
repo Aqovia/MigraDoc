@@ -3,6 +3,9 @@ pull_requests:
   do_not_increment_build_number: true
 image: Visual Studio 2017
 clone_depth: 1
+# scripts that run after cloning repository
+install:  
+  - git.exe submodule update --init --recursive
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
